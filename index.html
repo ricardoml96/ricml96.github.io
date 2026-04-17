@@ -1,14 +1,74 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ricardo | Chief of Staff & Developer</title>
-    <meta name="description" content="Portfolio of Ricardo - Chief of Staff and Full Stack Developer specializing in AI and modern web technologies." />
-  </head>
-  <body class="bg-slate-900">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo | Creative Developer</title>
+    <style>
+        :root {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --accent: #ff0055;
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background-color: var(--bg); 
+            color: var(--text-main); 
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 100px 24px; }
+        
+        /* Hero */
+        .hero { margin-bottom: 100px; }
+        .hero h1 { font-size: 5rem; font-weight: 800; line-height: 1; letter-spacing: -0.05em; margin-bottom: 24px; }
+        .hero p { font-size: 1.5rem; color: var(--text-dim); max-width: 500px; }
+
+        /* Sections */
+        .section-title { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 40px; }
+        
+        /* Grid de Projetos */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .project-card { 
+            background: var(--surface); padding: 32px; border-radius: 24px; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .project-card:hover { transform: translateY(-10px); border-color: var(--accent); }
+        .project-card h3 { font-size: 1.5rem; margin-bottom: 12px; }
+        .project-card p { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 24px; }
+
+        /* Footer */
+        footer { margin-top: 100px; padding-top: 50px; border-top: 1px solid #333; display: flex; justify-content: space-between; }
+        a { color: var(--text-main); text-decoration: none; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>Ricardo.</h1>
+            <p>Construindo a minha base técnica, um projeto de cada vez. Criativo e focado em moderna web experience.</p>
+        </section>
+
+        <section>
+            <div class="section-title">Projetos em Construção</div>
+            <div class="grid">
+                <div class="project-card">
+                    <h3>Projeto Alpha</h3>
+                    <p>O conceito inicial que irá definir a minha abordagem de desenvolvimento.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Ferramenta Beta</h3>
+                    <p>Uma solução de automação focada em performance e facilidade de uso.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026</p>
+            <a href="mailto:ricardo.ml96@gmail.com">ricardo.ml96@gmail.com</a>
+        </footer>
+    </div>
+</body>
 </html>
