@@ -9,32 +9,33 @@
         body { 
             background-color: #050505; 
             color: #ffffff; 
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             min-height: 100vh;
             display: flex;
         }
         
-        /* Left Sidebar - The Business Card */
+        /* Left Sidebar */
         .sidebar { 
             width: 350px; 
             background: #0a0a0a; 
             padding: 60px; 
             border-right: 1px solid #1a1a1a;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             height: 100vh;
             position: sticky;
             top: 0;
+            display: flex;
+            flex-direction: column;
         }
+        .profile-section { margin-bottom: 40px; }
         .profile-pic { 
             width: 100px; height: 100px; 
             background: #1a1a1a; 
             border-radius: 50%; 
             margin-bottom: 30px;
         }
+        .bio-section { margin-top: auto; }
         .sidebar h1 { font-size: 2rem; margin-bottom: 10px; }
-        .sidebar p { color: #666; margin-bottom: 40px; line-height: 1.4; }
+        .sidebar p { color: #666; margin-bottom: 30px; line-height: 1.5; font-size: 1rem; }
         .contact-btn { 
             display: inline-block;
             padding: 12px 24px;
@@ -44,14 +45,13 @@
             font-weight: 600;
             font-size: 0.9rem;
             text-decoration: none;
-            width: fit-content;
         }
 
         /* Main Content */
-        .content { flex: 1; padding: 100px 80px; }
-        .section-title { color: #333; font-size: 0.8rem; margin-bottom: 40px; text-transform: uppercase; }
+        .content { flex: 1; padding: 60px 80px; }
+        .section-title { color: #333; font-size: 0.7rem; margin-bottom: 30px; text-transform: uppercase; letter-spacing: 0.1em; }
         
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         .card { 
             padding: 30px; 
             background: #0a0a0a; 
@@ -59,15 +59,19 @@
             border-radius: 16px;
         }
         .card h3 { margin-bottom: 10px; }
-        .card p { color: #666; font-size: 0.9rem; }
+        .card p { color: #666; font-size: 0.9rem; line-height: 1.5; }
     </style>
 </head>
 <body>
     <aside class="sidebar">
-        <div class="profile-pic"></div>
-        <h1>Ricardo</h1>
-        <p>Software Developer. Focado em criar soluções digitais que unem performance e design minimalista.</p>
-        <a href="mailto:ricardo.ml96@gmail.com" class="contact-btn">Vamos conversar</a>
+        <div class="profile-section">
+            <div class="profile-pic"></div>
+            <h1>Ricardo</h1>
+        </div>
+        <div class="bio-section">
+            <p>Software Developer. Focado em criar soluções digitais que unem performance e design minimalista.</p>
+            <a href="mailto:ricardo.ml96@gmail.com" class="contact-btn">Vamos conversar</a>
+        </div>
     </aside>
 
     <main class="content">
