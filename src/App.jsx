@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Github, 
-  Twitter, 
-  Linkedin, 
+  Code, 
+  X, 
+  User, 
   Mail, 
   ExternalLink, 
   Terminal, 
@@ -159,13 +159,13 @@ const Contact = () => (
       </p>
       <div className="flex justify-center gap-6">
         <a href="#" className="p-4 bg-slate-800 rounded-2xl text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
-          <Github />
+          <Code />
         </a>
         <a href="#" className="p-4 bg-slate-800 rounded-2xl text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
-          <Linkedin />
+          <User />
         </a>
         <a href="#" className="p-4 bg-slate-800 rounded-2xl text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
-          <Twitter />
+          <X />
         </a>
         <a href="mailto:hello@ricardo.dev" className="p-4 bg-slate-800 rounded-2xl text-slate-300 hover:text-white hover:bg-slate-700 transition-all">
           <Mail />
